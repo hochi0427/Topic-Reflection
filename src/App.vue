@@ -1,7 +1,24 @@
 <script setup>
 import { ref } from 'vue'
 
-const selectedWeek = ref(2)
+const defaultWeek = 2
+const lastWeek = 10
+
+const getWeekFromUrl = () => {
+  const week = Number.parseInt(new URLSearchParams(window.location.search).get('week'), 10)
+
+  return week >= defaultWeek && week <= lastWeek ? week : defaultWeek
+}
+
+const selectedWeek = ref(getWeekFromUrl())
+
+const selectWeek = (week) => {
+  selectedWeek.value = week
+
+  const url = new URL(window.location.href)
+  url.searchParams.set('week', week)
+  window.history.replaceState({}, '', url)
+}
 
 const reflections = [
   {
@@ -89,7 +106,7 @@ const currentReflection = () => reflections.find(({ week }) => week === selected
             :class="{ selected: selectedWeek === week }"
             type="button"
             :aria-current="selectedWeek === week ? 'page' : undefined"
-            @click="selectedWeek = week"
+            @click="selectWeek(week)"
           >
             <span>Week</span> {{ week }}
           </button>
