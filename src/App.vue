@@ -70,7 +70,7 @@ const reflections = [
         title: 'A burning question',
 
         content:
-          'How can we know when physical interaction is actually helping learners rather than adding more cognitive load? If haptic and visual information may use some of the same cognitive resources, how should designers decide what information should be physical and what should remain visual?',
+          'How can we know when physical interaction is actually helping learners rather than adding more cognitive load? Since learners may respond differently to hands-on activities, how should designers decide what information should be physical and what should remain visual? Is TUI learning suitable for all learners, or does it work better for certain groups of learners?',
       },
     ],
   },
