@@ -2,12 +2,13 @@
 import { ref } from 'vue'
 
 const defaultWeek = 2
+const firstWeek = 1
 const lastWeek = 10
 
 const getWeekFromUrl = () => {
   const week = Number.parseInt(new URLSearchParams(window.location.search).get('week'), 10)
 
-  return week >= defaultWeek && week <= lastWeek ? week : defaultWeek
+  return week >= firstWeek && week <= lastWeek ? week : defaultWeek
 }
 
 const selectedWeek = ref(getWeekFromUrl())
@@ -21,6 +22,23 @@ const selectWeek = (week) => {
 }
 
 const reflections = [
+  {
+    week: 1,
+    sections: [
+      {
+        type: 'takeaway',
+        number: '00',
+        title: 'MakerSpace Training',
+        content: `The MakerSpace training introduced us to different tools, including 3D printers and laser cutters. The instructor also showed us some projects made by previous users, and I was pretty impressed by how detailed the final products could be.
+
+          At the end of the training, the instructor showed us how the drilling machine works, and we followed the instructions and drilled a hole by ourselves. Through this process, we learned how to operate the machine and some important safety rules. Although I have used a drilling machine before, it was still nice to have hands-on practice and become more familiar with the tools in the MakerSpace.
+
+          However, since this was a very brief training, I think I still need more knowledge and practice before operating some of the machines on my own. I hope I can take more training, especially for the 3D printers and laser cutters, and actually make something myself.
+
+          One question that came up for me is whether NYU provides students with access to any 3D modeling or CAD software through our NYU accounts. I would like to learn more about the design process before actually using the 3D printers.`,
+      },
+    ],
+  },
   {
     week: 2,
     sections: [
