@@ -74,7 +74,34 @@ const reflections = [
       },
     ],
   },
-  ...Array.from({ length: 7 }, (_, index) => ({ week: index + 4, sections: [] })),
+  {
+    week: 4,
+
+    sections: [
+      {
+        type: 'takeaway',
+
+        number: '01',
+
+        title: 'Takeaway',
+
+        content: `One of my takeaways from this reading is that TUI can make the learning process easier to observe. When learners interact with physical objects, instructors can see how they use and react to them. Through these interactions, instructors can better understand learners’ progress and recognize when they might need help. This allows instructors to react and provide support during the learning process.
+        I really like how the article The Promise of Empathy: Design, Disability, and Knowing the “Other” criticizes how designers define empathy, especially when designing for people with disabilities. We are never the “Other,” and we cannot fully understand how others experience their lives. Simulating a disability does not mean we are actually experiencing the real life of a person with a disability. Instead of trying to experience what users experience, I think true empathy should come from listening to people with real lived experiences and involving them in the design process. For me, good design is not about saying “I understand the user,” but about continuously listening to real users and improving the design with them.`,
+      },
+
+      {
+        type: 'question',
+
+        number: '02',
+
+        title: 'A burning question',
+
+        content:
+          'About the article “Retooling Solidarity, Reimagining Justice,” I understand that good intentions and innovative technologies do not automatically create social good. However, I also think these technologies can still bring practical benefits even if they do not solve the larger structural problem. For example, Promise may create another form of surveillance, but it can also provide an alternative to being held in jail. Similarly, VR may not allow us to truly understand another person’s experience, but it can still provide another way to access and experience information. This makes me wonder that how should we evaluate a technology that provides practical benefits while still reinforcing some problems in the existing system?',
+      },
+    ],
+  },
+  ...Array.from({ length: 6 }, (_, index) => ({ week: index + 5, sections: [] })),
 ]
 
 const weeks = reflections.map(({ week }) => week)
@@ -313,6 +340,10 @@ const currentReflection = () => reflections.find(({ week }) => week === selected
 }
 .week-button.selected span {
   color: #b8daf0;
+}
+
+.section-copy {
+  white-space: pre-line;
 }
 
 .reflection-area {
