@@ -106,11 +106,17 @@ const reflections = [
         content: `One of my takeaways from this reading is that TUI can make the learning process easier to observe. When learners interact with physical objects, instructors can see how they use and react to them. Through these interactions, instructors can better understand learners’ progress and recognize when they might need help. This allows instructors to react and provide support during the learning process.
         I really like how the article The Promise of Empathy: Design, Disability, and Knowing the “Other” criticizes how designers define empathy, especially when designing for people with disabilities. We are never the “Other,” and we cannot fully understand how others experience their lives. Simulating a disability does not mean we are actually experiencing the real life of a person with a disability. Instead of trying to experience what users experience, I think true empathy should come from listening to people with real lived experiences and involving them in the design process. For me, good design is not about saying “I understand the user,” but about continuously listening to real users and improving the design with them.`,
       },
-
+      {
+        type: 'connection',
+        number: '02',
+        title: 'Connection to a real-world example',
+        content:
+          'One example that came to my mind is accessibility design. I have seen products or spaces that add accessibility features because designers believe they are helping people with disabilities, but these features are sometimes difficult to use in real situations. For example, some wheelchair ramps are too steep for wheelchair users, so they have to use extra effort or may not even be able to go up the ramp by themselves. The designer may simply replace the stairs with a ramp and focus more on making it look good rather than considering the actual usability of the accessibility feature. This reminds me that having good intentions does not always mean that the design actually meets users’ needs.',
+      },
       {
         type: 'question',
 
-        number: '02',
+        number: '03',
 
         title: 'A burning question',
 
