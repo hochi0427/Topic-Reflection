@@ -125,7 +125,41 @@ const reflections = [
       },
     ],
   },
-  ...Array.from({ length: 6 }, (_, index) => ({ week: index + 5, sections: [] })),
+  {
+    week: 5,
+
+    sections: [
+      {
+        type: 'takeaway',
+
+        number: '01',
+
+        title: 'Takeaway',
+
+        content: `One of my takeaways from the reading “Participatory Design of Technology for Inclusive Education: A Case Study” is that the flexibility of Makey Makey creates many possibilities for students with disabilities, intellectual giftedness, and ASD to be included in regular classrooms. By using Makey Makey, teachers can create different ways for students to interact and learn based on their abilities and needs. I especially like how the design focuses on cultivating students’ autonomy. It not only provides more learning opportunities, but also reduces barriers and gives students more choices in how they participate in learning.
+       I was also surprised by the idea in Brazil that “regular school must be for all.” It is not only about including students with different needs in regular classrooms, but also changing how educators work. Regular teachers and special education teachers may need to work more closely and learn different technologies to support different students.  It makes me think that inclusive education is not only about changing the classroom, but may also require changes in the education system and how we prepare teachers.`,
+      },
+      {
+        type: 'connection',
+        number: '02',
+        title: 'Connection to a real-world example',
+        content: `The “Spiral of Exclusion” mentioned in Nothing About Us Without Us reminds me of gender inequality in Taiwan. In the past, Taiwan was a much more male-dominated society, and many political and decision-making positions were mostly held by men. This meant that men also had more power over resources and decisions.
+
+        However, I am glad that Taiwanese society has become more open-minded and diverse. We even had our first female president in 2016, and I can also see more gender diversity in schools, workplaces, and politics. I think having people from different backgrounds involved in decision-making is necessary because otherwise we may keep making decisions based on the perspectives of the same group.`,
+      },
+      {
+        type: 'question',
+
+        number: '03',
+
+        title: 'A burning question',
+
+        content:
+          'If there are budget or time limitations in the design process, do we still need to stick with partnership and community control? Or is a lower level of participation sometimes acceptable? For example, in an elderly care facility, it might be difficult for some elderly people to continuously participate in a design group. How can designers balance meaningful participation with these real-world limitations?',
+      },
+    ],
+  },
+  ...Array.from({ length: 7 }, (_, index) => ({ week: index + 4, sections: [] })),
 ]
 
 const weeks = reflections.map(({ week }) => week)
