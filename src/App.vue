@@ -158,7 +158,40 @@ const reflections = [
       },
     ],
   },
-  ...Array.from({ length: 5 }, (_, index) => ({ week: index + 6, sections: [] })),
+  {
+    week: 6,
+
+    sections: [
+      {
+        type: 'takeaway',
+
+        number: '01',
+
+        title: 'Takeaway',
+
+        content: `One of my takeaways from the reading “Getting Down to Details: Using Theories of Cognition and Learning to Inform Tangible User Interface Design” is that TUIs have a well-developed design framework based on theories of cognition and learning. Reading through the 12 design guidelines and examples made me realize that TUIs are not just about replacing a keyboard and mouse with different physical tools. The physical interaction itself can be designed to support learning in different ways.
+        Some of my favorite examples are the TUI Jigsaw Puzzle and the Mathematical Imagery Trainer. With a tangible puzzle, students can physically touch, move, and rotate the pieces instead of doing all of the spatial processing mentally, which can help reduce cognitive load. The Mathematical Imagery Trainer also interested me because students use proportional movements of both hands to explore mathematical concepts. Instead of only seeing an abstract concept, they can experience it through their body movements. These examples helped me understand how the design of physical interaction in TUIs can create meaningful learning experiences.`,
+      },
+      {
+        type: 'connection',
+        number: '02',
+        title: 'Connection to a real-world example',
+        content: `This reading reminded me of the Pattern Cube Game that our team has designed. We already have physical and digital objects, but the framework made me think about how we could further develop the game. For example, we could add sensors to the cubes to detect how learners rotate and position them, and provide feedback to support metacognition while learning spatial reasoning.
+        Since the Pattern Cube Game can also be played by multiple players, I think it connects well with the idea of monitoring activity and gaze. Players can play around the same table, create challenges for each other, observe how others solve the puzzle, and share their strategies and ideas. This allows them to learn not only from the cubes, but also from each other.`,
+      },
+      {
+        type: 'question',
+
+        number: '03',
+
+        title: 'A burning question',
+
+        content:
+          'I really like how this reading uses stigmergy to explain how physical traces can support thinking and create a “physical history.” However, if too many traces are left in the space, could they also increase cognitive load and become distracting? How can designers balance using physical traces to support deeper thinking without creating too much confusion?',
+      },
+    ],
+  },
+  ...Array.from({ length: 4 }, (_, index) => ({ week: index + 7, sections: [] })),
 ]
 
 const weeks = reflections.map(({ week }) => week)
