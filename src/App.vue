@@ -191,7 +191,36 @@ const reflections = [
       },
     ],
   },
-  ...Array.from({ length: 4 }, (_, index) => ({ week: index + 7, sections: [] })),
+  {
+    week: 7,
+    sections: [
+      {
+        type: 'takeaway',
+        number: '01',
+        title: 'Takeaway',
+        content: `One of my takeaways from the article "A Brief Rant on the Future of Interaction Design" is that interaction is not limited to screens. As digital devices have become part of our daily lives, people tend to focus on designing user interfaces and experiences around screens. However, this may narrow the possibilities of interaction and make us overlook our sense of touch, which is also an important part of human perception.
+
+I really like the definition mentioned in the article: "A tool addresses human needs by amplifying human capabilities." Our hands can not only feel things but also manipulate them. By combining our sense of touch with physical manipulation, technology can better support and amplify our natural abilities. Interaction should not be limited to touching screens, but should also involve physically manipulating the world around us.`,
+      },
+      {
+        type: 'connection',
+        number: '02',
+        title: 'Connection to a Real-World Example',
+        content: `As someone who drives frequently, I really dislike how modern cars are replacing physical buttons with touchscreens. Using a touchscreen while driving can distract drivers because, unlike physical buttons, touchscreens often require drivers to look at the screen to find and operate controls. Physical buttons allow drivers to feel and operate controls without constantly looking at them.
+
+This reminds me of the author's point that our hands are not only for touching but also for feeling and manipulating things. Sometimes, replacing physical controls with digital interfaces can actually limit our natural abilities rather than amplify them.`,
+      },
+      {
+        type: 'question',
+        number: '03',
+        title: 'Burning Question',
+        content: `Although physical interaction has many benefits, I wonder how practical it is in real life. For example, physical books can be heavy, while e-books are more convenient to carry. Creating interactive physical devices may also require expensive sensors and technologies, increasing their cost. In addition, the pandemic showed us the importance of touchless interaction to reduce physical contact.
+
+Considering these limitations, how can designers balance the benefits of physical interaction with cost, convenience, and hygiene?`,
+      },
+    ],
+  },
+  ...Array.from({ length: 3 }, (_, index) => ({ week: index + 8, sections: [] })),
 ]
 
 const weeks = reflections.map(({ week }) => week)
@@ -239,6 +268,12 @@ const currentReflection = () => reflections.find(({ week }) => week === selected
             <div>
               <p class="card-kicker">Reflection entry</p>
               <h2>Week {{ selectedWeek }}</h2>
+              <p v-if="currentReflection().date" class="card-kicker">
+                {{ currentReflection().date }}
+              </p>
+              <p v-if="currentReflection().reading" class="hero-subtitle">
+                {{ currentReflection().reading }}
+              </p>
             </div>
             <span class="entry-status"><span class="status-dot"></span> In progress</span>
           </div>
@@ -513,6 +548,7 @@ const currentReflection = () => reflections.find(({ week }) => week === selected
   background: #eef5f8;
 }
 .section-question {
+  max-width: 900px;
   margin: 0 -20px;
   padding: 25px 20px 8px;
   border: 0;
@@ -536,7 +572,7 @@ const currentReflection = () => reflections.find(({ week }) => week === selected
   color: #4c9bc8;
 }
 .section-copy p {
-  max-width: 735px;
+  max-width: 800px;
   margin: 0;
   color: #4b657c;
   font-size: 1.05rem;
