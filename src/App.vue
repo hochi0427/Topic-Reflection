@@ -222,7 +222,6 @@ Considering these limitations, how can designers balance the benefits of physica
   },
   {
     week: 8,
-    reading: 'Innovation Accountability and Participatory Action Research (PAR)',
     sections: [
       {
         type: 'takeaway',
@@ -233,14 +232,8 @@ Considering these limitations, how can designers balance the benefits of physica
 Sometimes, what we see as a problem is actually the result of something much deeper. These underlying causes may not be obvious, so we need to spend more time understanding the background and the people involved. I think this also connects to the idea of going deep and across, because meaningful research should not only reach more people but also develop a deeper understanding of their experiences and contexts.`,
       },
       {
-        type: 'connection',
-        number: '02',
-        title: 'Connection to a Real-World Example',
-        content: '',
-      },
-      {
         type: 'question',
-        number: '03',
+        number: '02',
         title: 'Burning Question',
         content: 'As designers, we should try to solve the real problem instead of just focusing on the problems we can easily see. However, I’m curious whether these deeper problems can really be solved through design alone, especially when they involve social or structural issues. If not, should we focus more on understanding the background and providing people with more knowledge, resources, or opportunities through our designs?',
       },
