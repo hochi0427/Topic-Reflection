@@ -239,7 +239,34 @@ Sometimes, what we see as a problem is actually the result of something much dee
       },
     ],
   },
-  ...Array.from({ length: 2 }, (_, index) => ({ week: index + 9, sections: [] })),
+  {
+    week: 9,
+    sections: [
+      {
+        type: 'takeaway',
+        number: '01',
+        title: 'Takeaway',
+        content: `One takeaway from the article is that maker culture is not only about hands-on activities, but also about students’ personal interests, which naturally motivate them to explore and learn more. These interests encourage students to continue learning outside the classroom, even without direct guidance from instructors.
+
+Through this process, students can gradually move from heteronomy to self-determination, taking more control over their own learning. Instead of simply following instructions, they can experiment, make mistakes, reflect on their experiences, and develop their own ideas. I think this is an important part of maker culture because it encourages students to become more independent, creative, and critical thinkers.`,
+      },
+      {
+        type: 'connection',
+        number: '02',
+        title: 'Connection to a Real-World Example',
+        content:
+          'This reading reminded me of Minecraft. Many players start playing simply because they enjoy building and exploring, but their interests can lead them to learn more complicated things. Since the game includes physics-based mechanics and Redstone systems, players can explore basic concepts related to physics, logic, and engineering. They may also watch tutorials, join gaming communities, discuss ideas, and learn from other players. I think this is a good example of how digital environments can support informal learning without direct guidance from instructors, while also encouraging self-determination.',
+      },
+      {
+        type: 'question',
+        number: '03',
+        title: 'Burning Question',
+        content:
+          'Since the article suggests incorporating informal learning into formal education, I wonder how much instructors should be involved in the learning process. If students’ personal interests become assignments or homework, will they still have the same motivation to explore? Could bringing maker culture into formal education actually change its fundamental values, especially the emphasis on autonomy and self-determination?',
+      },
+    ],
+  },
+  { week: 10, sections: [] },
 ]
 
 const weeks = reflections.map(({ week }) => week)
