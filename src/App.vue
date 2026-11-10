@@ -266,7 +266,50 @@ Through this process, students can gradually move from heteronomy to self-determ
       },
     ],
   },
-  { week: 10, sections: [] },
+  {
+    week: 10,
+    reading: 'Relection from Early Playtesting',
+    sections: [
+      {
+        type: 'takeaway',
+        number: '01',
+        title: 'Findings',
+        content: `Our early playtesting at PS287 gave me several insights into how elementary school students interact with our project. Children are naturally curious and energetic, which can sometimes make the activity difficult to manage. However, their reactions were completely understandable. When students see something new and exciting, especially when their friends get a chance to play while they can only stand and watch, it is difficult for them to remain patient.
+
+Another important observation was that children really enjoy receiving feedback. While playing the drum, they were also interested in the visual feedback displayed on the digital screen. However, the screen could also become a distraction. Some students started interacting with the keyboard or searching for YouTube videos instead of focusing on the activity.
+
+I also noticed that children tend to react very instinctively. Rather than thinking carefully about how something works, they often prefer to try it immediately and learn through exploration.`,
+      },
+      {
+        type: 'connection',
+        number: '02',
+        title: 'Changes',
+        content: `Based on these findings, we realized the importance of giving every student an opportunity to interact with the project. Ideally, we want children to participate and enjoy the experience at the same time. Since it is difficult to design a single interaction that everyone can use simultaneously, we plan to create a multi-scene experience that allows more students to engage with different parts of the project.
+
+In our original prototype, we planned to include a digital screen. However, after observing how easily students became distracted by digital devices, we decided to remove the screen and replace it with physical scenes and objects created through 3D printing.
+
+In terms of learning design, we also realized the importance of using simple and familiar vocabulary. Elementary school students may not understand complex terminology, so we need to communicate learning concepts in ways that are clear, accessible, and connected to their experiences.`,
+      },
+      {
+        type: 'takeaway',
+        number: '03',
+        title: 'Further Research',
+        content: `Our project aims to teach children about climate action, including global warming and renewable energy. For our next steps, we want to explore how these concepts can be connected to children's everyday lives.
+
+We believe that making these connections can help students better understand abstract environmental concepts and apply what they learn to real-world situations.`,
+      },
+      {
+        type: 'connection',
+        number: '04',
+        title: 'Next Iteration',
+        content: `For our next iteration, we plan to 3D print our scenes and interactive objects and integrate LEDs to provide immediate visual feedback. When students interact with a button, the corresponding LEDs will light up to show the result of their actions.
+
+We also plan to create 3D-printed animals to represent the impacts of global warming, helping children visualize how environmental changes can affect living things.
+
+Overall, this early playtesting experience reminded me that designing for children requires more than creating an engaging activity. It is also important to consider how they naturally behave, explore, and interact with their surroundings. These observations will guide our next iteration toward a more accessible, interactive, and meaningful learning experience.`,
+      },
+    ],
+  },
 ]
 
 const weeks = reflections.map(({ week }) => week)
