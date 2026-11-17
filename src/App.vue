@@ -3,7 +3,7 @@ import { ref } from 'vue'
 
 const defaultWeek = 2
 const firstWeek = 1
-const lastWeek = 10
+const lastWeek = 11
 
 const getWeekFromUrl = () => {
   const week = Number.parseInt(new URLSearchParams(window.location.search).get('week'), 10)
@@ -307,6 +307,28 @@ We believe that making these connections can help students better understand abs
 We also plan to create 3D-printed animals to represent the impacts of global warming, helping children visualize how environmental changes can affect living things.
 
 Overall, this early playtesting experience reminded me that designing for children requires more than creating an engaging activity. It is also important to consider how they naturally behave, explore, and interact with their surroundings. These observations will guide our next iteration toward a more accessible, interactive, and meaningful learning experience.`,
+      },
+    ],
+  },
+  {
+    week: 11,
+    reading: 'Instructional Design Evaluation',
+    sections: [
+      {
+        type: 'takeaway',
+        number: '01',
+        title: 'Takeaway',
+        content: `One takeaway from the reading is that evaluation happens throughout the development process, not only during playtesting. This is especially important in formative evaluation. The article introduces five approaches to formative evaluation: connoisseur-based, decision-oriented, objective-based, constructivist, and developmental evaluation.
+
+Having these five approaches gives us different perspectives on how to evaluate our projects and determine whether we are moving in the right direction. Evaluation not only helps us improve our designs during development but also makes the overall design process more systematic.`,
+      },
+      {
+        type: 'question',
+        number: '02',
+        title: 'Burning Question',
+        content: `One burning question I have is: What happens if the results of summative evaluation do not match the findings from formative evaluation? What should instructional designers do in this situation? Should they change the learning objectives or go through the entire design process again? Would that be an effective approach?
+
+I also wonder whether summative evaluation could sometimes happen during the formative evaluation process, rather than always taking place at the end of development. Can the results of summative evaluation become part of a new formative evaluation cycle?`,
       },
     ],
   },
